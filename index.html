@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <!--Meta-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto IMC </title>
+  <link rel="stylesheet" href="style.css">
+  <!--Script-->
+  <script src="./JavaScript/script.js" defer type="module"></script>
+</head>
+<body>
+    <!--Mensagem de alerta no header-->
+   <div class="alert">
+     Digite somente números
+   </div>
+       <!-- Container main-->
+   <div class="container">
+    <main class="card">
+ 
+       <form id="imcForm">
+        <h1 class="title">Cálculo de IMC</h1>
+        <div class="input-wrapper">
+          <label for ="weight">Peso (Kg)</label>
+          <input 
+          id="weight" 
+          type="text"
+          placeholder="60"/>
+        </div>
+        <div class="input-wrapper">
+          <label for="height">Altura (Cm)</label>
+          <input 
+          id="height" 
+          type="text"
+          placeholder="165"/>
+        </div>
+
+        <button type="submit">Calcular IMC
+         
+          <img src="./assets2/seta.svg" alt="">
+          
+        </button>
+        
+       </form>
+          <!--popup-->
+    </main>
+   </div>
+   <div class="modal-wrapper ">
+    <div class="modal card">
+         <h2 class="title">
+          <span>Seu IMC é de 28</span> 
+        </h2>
+          <button class="close">
+              <img src="./assets/close.svg" alt="imagem para fechar popup">
+          </button>
+    </div>
+   </div>
+</body>
+</html>
